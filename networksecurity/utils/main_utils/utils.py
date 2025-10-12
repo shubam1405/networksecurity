@@ -2,12 +2,13 @@ import yaml
 from networksecurity.exception.exception import NetworkSecurityException
 from networksecurity.logging.logger import logging
 import os,sys
+from sklearn.model_selection import GridSearchCV
+
 import numpy as np
 #import dill
 import pickle
-
 from sklearn.metrics import r2_score
-from sklearn.model_selection import GridSearchCV
+
 
 def read_yaml_file(file_path: str) -> dict:
     try:
@@ -26,7 +27,8 @@ def write_yaml_file(file_path: str, content: object, replace: bool = False) -> N
             yaml.dump(content, file)
     except Exception as e:
         raise NetworkSecurityException(e, sys)
-    
+
+
 def save_numpy_array_data(file_path: str, array: np.array):
     """
     Save numpy array data to file
@@ -50,7 +52,9 @@ def save_object(file_path: str, obj: object) -> None:
         logging.info("Exited the save_object method of MainUtils class")
     except Exception as e:
         raise NetworkSecurityException(e, sys) from e
-    
+ 
+
+
 def load_object(file_path: str, ) -> object:
     try:
         if not os.path.exists(file_path):

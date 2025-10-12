@@ -1,0 +1,10 @@
+artifact_location: file:///C:/Users/shuba/OneDrive/Desktop/networksecurity/mlruns/0/models/m-40b0714d84a341a596d4bb83d1f979a5/artifacts
+creation_timestamp: 1760261863692
+experiment_id: '0'
+last_updated_timestamp: 1760261867133
+model_id: m-40b0714d84a341a596d4bb83d1f979a5
+model_type: null
+name: model
+source_run_id: 394b42bda99f432f8877a65ed7a36cac
+status: 2
+status_message: null
