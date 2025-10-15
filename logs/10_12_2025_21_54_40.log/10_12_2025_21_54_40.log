@@ -1,0 +1,33 @@
+[ 2025-10-12 21:54:52,285 ] 1025 httpx - INFO - HTTP Request: POST https://dagshub.com/login/oauth/middleman "HTTP/1.1 200 OK"
+[ 2025-10-12 21:54:53,597 ] 1025 httpx - INFO - HTTP Request: POST https://dagshub.com/login/oauth/access_token "HTTP/1.1 200 OK"
+[ 2025-10-12 21:54:54,938 ] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[ 2025-10-12 21:54:54,948 ] 107 dagshub - INFO - Accessing as shubam1405
+[ 2025-10-12 21:54:56,429 ] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/repos/shubam1405/networksecurity "HTTP/1.1 200 OK"
+[ 2025-10-12 21:54:57,803 ] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[ 2025-10-12 21:54:57,808 ] 107 dagshub - INFO - Initialized MLflow to track repo "shubam1405/networksecurity"
+[ 2025-10-12 21:54:57,810 ] 107 dagshub - INFO - Repository shubam1405/networksecurity initialized!
+[ 2025-10-12 21:54:57,811 ] 20 root - INFO - Initiate the data ingestion
+[ 2025-10-12 21:55:04,968 ] 85 root - INFO - Performed train test split on the dataframe
+[ 2025-10-12 21:55:04,968 ] 87 root - INFO - Exited split_data_as_train_test method of Data_Ingestion class
+[ 2025-10-12 21:55:04,969 ] 95 root - INFO - Exporting train and test file path.
+[ 2025-10-12 21:55:05,066 ] 104 root - INFO - Exported train and test file path.
+[ 2025-10-12 21:55:05,068 ] 23 root - INFO - Data Initiation Completed
+[ 2025-10-12 21:55:05,086 ] 27 root - INFO - Initiate the data Validation
+[ 2025-10-12 21:55:05,310 ] 48 root - INFO - Required number of columns: 2
+[ 2025-10-12 21:55:05,312 ] 49 root - INFO - Data frame has columns: 31
+[ 2025-10-12 21:55:05,312 ] 105 root - ERROR - Train dataframe does not contain all required columns.
+[ 2025-10-12 21:55:05,312 ] 48 root - INFO - Required number of columns: 2
+[ 2025-10-12 21:55:05,313 ] 49 root - INFO - Data frame has columns: 31
+[ 2025-10-12 21:55:05,313 ] 107 root - ERROR - Test dataframe does not contain all required columns.
+[ 2025-10-12 21:55:05,739 ] 29 root - INFO - data Validation Completed
+[ 2025-10-12 21:55:05,741 ] 32 root - INFO - data Transformation started
+[ 2025-10-12 21:55:05,741 ] 72 root - INFO - Starting data transformation process.
+[ 2025-10-12 21:55:05,968 ] 53 root - INFO - Creating KNNImputer pipeline for data transformation.
+[ 2025-10-12 21:55:05,968 ] 57 root - INFO - KNNImputer initialized with params: {'missing_values': nan, 'n_neighbors': 3, 'weights': 'uniform'}
+[ 2025-10-12 21:55:06,019 ] 48 root - INFO - Entered the save_object method of MainUtils class
+[ 2025-10-12 21:55:06,032 ] 52 root - INFO - Exited the save_object method of MainUtils class
+[ 2025-10-12 21:55:06,033 ] 48 root - INFO - Entered the save_object method of MainUtils class
+[ 2025-10-12 21:55:06,050 ] 52 root - INFO - Exited the save_object method of MainUtils class
+[ 2025-10-12 21:55:06,051 ] 112 root - INFO - Data transformation completed successfully.
+[ 2025-10-12 21:55:06,056 ] 36 root - INFO - data Transformation completed
+[ 2025-10-12 21:55:06,057 ] 38 root - INFO - Model Training sstared

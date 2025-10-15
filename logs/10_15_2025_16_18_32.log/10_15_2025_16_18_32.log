@@ -1,0 +1,39 @@
+[ 2025-10-15 16:18:40,558 ] 1025 httpx - INFO - HTTP Request: POST https://dagshub.com/login/oauth/middleman "HTTP/1.1 200 OK"
+[ 2025-10-15 16:18:41,550 ] 1025 httpx - INFO - HTTP Request: POST https://dagshub.com/login/oauth/access_token "HTTP/1.1 200 OK"
+[ 2025-10-15 16:18:42,647 ] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[ 2025-10-15 16:18:42,650 ] 107 dagshub - INFO - Accessing as shubam1405
+[ 2025-10-15 16:18:43,831 ] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/repos/shubam1405/networksecurity "HTTP/1.1 200 OK"
+[ 2025-10-15 16:18:45,227 ] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[ 2025-10-15 16:18:45,229 ] 107 dagshub - INFO - Initialized MLflow to track repo "shubam1405/networksecurity"
+[ 2025-10-15 16:18:45,230 ] 107 dagshub - INFO - Repository shubam1405/networksecurity initialized!
+[ 2025-10-15 16:19:50,277 ] 42 root - INFO - Start data Ingestion
+[ 2025-10-15 16:20:54,947 ] 85 root - INFO - Performed train test split on the dataframe
+[ 2025-10-15 16:20:54,947 ] 87 root - INFO - Exited split_data_as_train_test method of Data_Ingestion class
+[ 2025-10-15 16:20:54,948 ] 95 root - INFO - Exporting train and test file path.
+[ 2025-10-15 16:20:55,008 ] 104 root - INFO - Exported train and test file path.
+[ 2025-10-15 16:20:55,009 ] 45 root - INFO - Data Ingestion completed and artifact: DataIngestionArtifact(trained_file_path='Artifacts\\10_15_2025_16_18_33\\data_ingestion\\ingested\\train.csv', test_file_path='Artifacts\\10_15_2025_16_18_33\\data_ingestion\\ingested\\test.csv')
+[ 2025-10-15 16:20:55,016 ] 55 root - INFO - Initiate the data Validation
+[ 2025-10-15 16:20:55,114 ] 48 root - INFO - Required number of columns: 2
+[ 2025-10-15 16:20:55,114 ] 49 root - INFO - Data frame has columns: 31
+[ 2025-10-15 16:20:55,114 ] 105 root - ERROR - Train dataframe does not contain all required columns.
+[ 2025-10-15 16:20:55,115 ] 48 root - INFO - Required number of columns: 2
+[ 2025-10-15 16:20:55,115 ] 49 root - INFO - Data frame has columns: 31
+[ 2025-10-15 16:20:55,115 ] 107 root - ERROR - Test dataframe does not contain all required columns.
+[ 2025-10-15 16:20:55,314 ] 72 root - INFO - Starting data transformation process.
+[ 2025-10-15 16:20:55,399 ] 53 root - INFO - Creating KNNImputer pipeline for data transformation.
+[ 2025-10-15 16:20:55,399 ] 57 root - INFO - KNNImputer initialized with params: {'missing_values': nan, 'n_neighbors': 3, 'weights': 'uniform'}
+[ 2025-10-15 16:20:55,420 ] 48 root - INFO - Entered the save_object method of MainUtils class
+[ 2025-10-15 16:20:55,424 ] 52 root - INFO - Exited the save_object method of MainUtils class
+[ 2025-10-15 16:20:55,424 ] 48 root - INFO - Entered the save_object method of MainUtils class
+[ 2025-10-15 16:20:55,426 ] 52 root - INFO - Exited the save_object method of MainUtils class
+[ 2025-10-15 16:20:55,427 ] 112 root - INFO - Data transformation completed successfully.
+[ 2025-10-15 16:24:42,076 ] 88 root - INFO - Best model selected: Random Forest with score 0.8829150111124167
+[ 2025-10-15 16:24:54,583 ] 48 root - INFO - Entered the save_object method of MainUtils class
+[ 2025-10-15 16:24:54,627 ] 52 root - INFO - Exited the save_object method of MainUtils class
+[ 2025-10-15 16:31:21,761 ] 48 root - INFO - Entered the save_object method of MainUtils class
+[ 2025-10-15 16:31:21,805 ] 52 root - INFO - Exited the save_object method of MainUtils class
+[ 2025-10-15 16:36:28,955 ] 48 root - INFO - Entered the save_object method of MainUtils class
+[ 2025-10-15 16:36:28,999 ] 52 root - INFO - Exited the save_object method of MainUtils class
+[ 2025-10-15 16:36:29,000 ] 48 root - INFO - Entered the save_object method of MainUtils class
+[ 2025-10-15 16:36:29,041 ] 52 root - INFO - Exited the save_object method of MainUtils class
+[ 2025-10-15 16:36:29,041 ] 113 root - INFO - Model trainer artifact created: ModelTrainerArtifact(trained_model_file_path='Artifacts\\10_15_2025_16_18_33\\model_trainer\\trained_model\\model.pkl', train_metric_artifact=ClassificationMetricArtifact(f1_score=0.9920048578079141, precision_score=0.9909017387788112, recall_score=0.9931104356636271), test_metric_artifact=ClassificationMetricArtifact(f1_score=0.9738562091503268, precision_score=0.9722675367047309, recall_score=0.9754500818330606))

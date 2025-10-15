@@ -1,0 +1,45 @@
+[ 2025-10-15 15:57:57,037 ] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[ 2025-10-15 15:57:57,047 ] 107 dagshub - INFO - Accessing as shubam1405
+[ 2025-10-15 15:57:58,354 ] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/repos/shubam1405/networksecurity "HTTP/1.1 200 OK"
+[ 2025-10-15 15:57:59,464 ] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[ 2025-10-15 15:57:59,468 ] 107 dagshub - INFO - Initialized MLflow to track repo "shubam1405/networksecurity"
+[ 2025-10-15 15:57:59,471 ] 107 dagshub - INFO - Repository shubam1405/networksecurity initialized!
+[ 2025-10-15 15:58:00,607 ] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/repos/shubam1405/networksecurity "HTTP/1.1 200 OK"
+[ 2025-10-15 15:58:00,611 ] 107 dagshub - INFO - Initialized MLflow to track repo "shubam1405/networksecurity"
+[ 2025-10-15 15:58:00,612 ] 107 dagshub - INFO - Repository shubam1405/networksecurity initialized!
+[ 2025-10-15 15:58:00,612 ] 34 root - INFO - \U0001f680 Initiating data ingestion...
+[ 2025-10-15 15:58:40,885 ] 85 root - INFO - Performed train test split on the dataframe
+[ 2025-10-15 15:58:40,885 ] 87 root - INFO - Exited split_data_as_train_test method of Data_Ingestion class
+[ 2025-10-15 15:58:40,886 ] 95 root - INFO - Exporting train and test file path.
+[ 2025-10-15 15:58:40,974 ] 104 root - INFO - Exported train and test file path.
+[ 2025-10-15 15:58:40,975 ] 37 root - INFO - \u2705 Data ingestion completed.
+[ 2025-10-15 15:58:40,986 ] 45 root - INFO - \U0001f9e9 Initiating data validation...
+[ 2025-10-15 15:58:41,094 ] 48 root - INFO - Required number of columns: 2
+[ 2025-10-15 15:58:41,094 ] 49 root - INFO - Data frame has columns: 31
+[ 2025-10-15 15:58:41,095 ] 105 root - ERROR - Train dataframe does not contain all required columns.
+[ 2025-10-15 15:58:41,095 ] 48 root - INFO - Required number of columns: 2
+[ 2025-10-15 15:58:41,095 ] 49 root - INFO - Data frame has columns: 31
+[ 2025-10-15 15:58:41,095 ] 107 root - ERROR - Test dataframe does not contain all required columns.
+[ 2025-10-15 15:58:41,309 ] 48 root - INFO - \u2705 Data validation completed.
+[ 2025-10-15 15:58:41,309 ] 56 root - INFO - \U0001f504 Initiating data transformation...
+[ 2025-10-15 15:58:41,309 ] 72 root - INFO - Starting data transformation process.
+[ 2025-10-15 15:58:41,416 ] 53 root - INFO - Creating KNNImputer pipeline for data transformation.
+[ 2025-10-15 15:58:41,416 ] 57 root - INFO - KNNImputer initialized with params: {'missing_values': nan, 'n_neighbors': 3, 'weights': 'uniform'}
+[ 2025-10-15 15:58:41,435 ] 48 root - INFO - Entered the save_object method of MainUtils class
+[ 2025-10-15 15:58:41,439 ] 52 root - INFO - Exited the save_object method of MainUtils class
+[ 2025-10-15 15:58:41,439 ] 48 root - INFO - Entered the save_object method of MainUtils class
+[ 2025-10-15 15:58:41,442 ] 52 root - INFO - Exited the save_object method of MainUtils class
+[ 2025-10-15 15:58:41,442 ] 112 root - INFO - Data transformation completed successfully.
+[ 2025-10-15 15:58:41,444 ] 59 root - INFO - \u2705 Data transformation completed.
+[ 2025-10-15 15:58:41,445 ] 64 root - INFO - \U0001f3cb\ufe0f Initiating model training...
+[ 2025-10-15 16:02:13,254 ] 88 root - INFO - Best model selected: Random Forest with score 0.8790631759528604
+[ 2025-10-15 16:02:19,265 ] 48 root - INFO - Entered the save_object method of MainUtils class
+[ 2025-10-15 16:02:19,270 ] 52 root - INFO - Exited the save_object method of MainUtils class
+[ 2025-10-15 16:02:41,244 ] 48 root - INFO - Entered the save_object method of MainUtils class
+[ 2025-10-15 16:02:41,248 ] 52 root - INFO - Exited the save_object method of MainUtils class
+[ 2025-10-15 16:02:56,216 ] 48 root - INFO - Entered the save_object method of MainUtils class
+[ 2025-10-15 16:02:56,220 ] 52 root - INFO - Exited the save_object method of MainUtils class
+[ 2025-10-15 16:02:56,220 ] 48 root - INFO - Entered the save_object method of MainUtils class
+[ 2025-10-15 16:02:56,224 ] 52 root - INFO - Exited the save_object method of MainUtils class
+[ 2025-10-15 16:02:56,224 ] 113 root - INFO - Model trainer artifact created: ModelTrainerArtifact(trained_model_file_path='Artifacts\\10_15_2025_15_57_52\\model_trainer\\trained_model\\model.pkl', train_metric_artifact=ClassificationMetricArtifact(f1_score=0.9907904058293695, precision_score=0.9880904319741622, recall_score=0.993505175563223), test_metric_artifact=ClassificationMetricArtifact(f1_score=0.9734513274336283, precision_score=0.9633757961783439, recall_score=0.983739837398374))
+[ 2025-10-15 16:02:56,225 ] 72 root - INFO - \u2705 Model training completed successfully.

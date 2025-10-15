@@ -1,0 +1,4 @@
+[ 2025-10-15 15:52:56,269 ] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[ 2025-10-15 15:52:56,275 ] 107 dagshub - INFO - Accessing as shubam1405
+[ 2025-10-15 15:52:59,843 ] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/repos/shubam1405/networksecurity "HTTP/1.1 429 Too Many Requests"
+[ 2025-10-15 15:52:59,844 ] 106 dagshub - ERROR - Got status code 429 when getting repository info.

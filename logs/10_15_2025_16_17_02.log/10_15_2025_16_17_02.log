@@ -1,0 +1,2 @@
+[ 2025-10-15 16:17:08,247 ] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 429 Too Many Requests"
+[ 2025-10-15 16:17:40,551 ] 1025 httpx - INFO - HTTP Request: POST https://dagshub.com/login/oauth/middleman "HTTP/1.1 504 Gateway Time-out"

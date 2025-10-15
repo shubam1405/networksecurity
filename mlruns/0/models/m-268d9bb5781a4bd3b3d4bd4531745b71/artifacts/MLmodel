@@ -1,0 +1,22 @@
+artifact_path: file:///C:/Users/shuba/OneDrive/Desktop/networksecurity/mlruns/0/models/m-268d9bb5781a4bd3b3d4bd4531745b71/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.10.0
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.7.2
+mlflow_version: 3.4.0
+model_id: m-268d9bb5781a4bd3b3d4bd4531745b71
+model_size_bytes: 13532799
+model_uuid: m-268d9bb5781a4bd3b3d4bd4531745b71
+prompts: null
+run_id: f3f425a6b06c4664adb2f454fa07832d
+utc_time_created: '2025-10-12 15:38:02.108016'

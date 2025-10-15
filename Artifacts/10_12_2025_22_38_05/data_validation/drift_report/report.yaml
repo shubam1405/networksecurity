@@ -1,0 +1,112 @@
+Abnormal_URL:
+  drift_status: &id001 !!python/object/apply:numpy._core.multiarray.scalar
+  - &id002 !!python/object/apply:numpy.dtype
+    args:
+    - b1
+    - false
+    - true
+    state: !!python/tuple
+    - 3
+    - '|'
+    - null
+    - null
+    - null
+    - -1
+    - -1
+    - 0
+  - !!binary |
+    AA==
+  p_value: 0.9999982228268777
+DNSRecord:
+  drift_status: *id001
+  p_value: 0.9687622789382879
+Domain_registeration_length:
+  drift_status: *id001
+  p_value: 0.9876237011526984
+Favicon:
+  drift_status: *id001
+  p_value: 1.0
+Google_Index:
+  drift_status: *id001
+  p_value: 1.0
+HTTPS_token:
+  drift_status: *id001
+  p_value: 0.9999996521355587
+Iframe:
+  drift_status: *id001
+  p_value: 1.0
+Links_in_tags:
+  drift_status: *id001
+  p_value: 1.0
+Links_pointing_to_page:
+  drift_status: *id001
+  p_value: 1.0
+Page_Rank:
+  drift_status: *id001
+  p_value: 0.8923284435665428
+Prefix_Suffix:
+  drift_status: *id001
+  p_value: 0.9999999947754254
+Redirect:
+  drift_status: *id001
+  p_value: 0.9999999998789996
+Request_URL:
+  drift_status: *id001
+  p_value: 0.9999998099738984
+Result:
+  drift_status: *id001
+  p_value: 0.6209491851767668
+RightClick:
+  drift_status: *id001
+  p_value: 1.0
+SFH:
+  drift_status: *id001
+  p_value: 1.0
+SSLfinal_State:
+  drift_status: *id001
+  p_value: 0.9996208033369954
+Shortining_Service:
+  drift_status: *id001
+  p_value: 0.9999999999876384
+Statistical_report:
+  drift_status: *id001
+  p_value: 1.0
+Submitting_to_email:
+  drift_status: *id001
+  p_value: 0.9999998996954222
+URL_Length:
+  drift_status: *id001
+  p_value: 0.9860900857001905
+URL_of_Anchor:
+  drift_status: *id001
+  p_value: 0.6690447230238084
+age_of_domain:
+  drift_status: *id001
+  p_value: 0.998821814236978
+double_slash_redirecting:
+  drift_status: *id001
+  p_value: 0.9999999977781104
+having_At_Symbol:
+  drift_status: *id001
+  p_value: 0.9236254567999284
+having_IP_Address:
+  drift_status: *id001
+  p_value: 0.9328006214323754
+having_Sub_Domain:
+  drift_status: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id002
+  - !!binary |
+    AQ==
+  p_value: 0.027005215678010782
+on_mouseover:
+  drift_status: *id001
+  p_value: 1.0
+popUpWidnow:
+  drift_status: *id001
+  p_value: 1.0
+port:
+  drift_status: *id001
+  p_value: 0.9999999996602011
+web_traffic:
+  drift_status: *id001
+  p_value: 1.0
