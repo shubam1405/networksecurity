@@ -11,34 +11,40 @@ pipeline {
         stage('Install Dependencies') {
             steps {
                 echo 'Installing dependencies...'
-                sh 'npm install' // or your build command
+                sh '''
+                python3 -m pip install --upgrade pip
+                pip3 install -r requirements.txt || echo "requirements.txt not found, skipping..."
+                '''
             }
         }
 
         stage('Run Tests') {
             steps {
                 echo 'Running tests...'
-                sh 'npm test' // or your test command
+                sh '''
+                if [ -f "test_mongodb.py" ]; then
+                    python3 test_mongodb.py
+                else
+                    echo "No tests to run"
+                fi
+                '''
             }
         }
 
         stage('Deploy') {
             steps {
-                echo 'Deploying project...'
-                // your deploy command here
+                echo 'Deploying app...'
+                sh 'echo "Simulated deploy stage success!"'
             }
         }
     }
 
     post {
-        always {
-            echo 'Cleaning up...'
-        }
         success {
-            echo '✅ Pipeline executed successfully!'
+            echo '✅ Pipeline completed successfully!'
         }
         failure {
-            echo '❌ Pipeline failed!'
+            echo '❌ Pipeline failed. Check logs.'
         }
     }
 }
